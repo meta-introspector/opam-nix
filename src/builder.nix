@@ -39,7 +39,7 @@ resolveEnv: rec {
       let
         inherit (deps.nixpkgs.pkgsBuildBuild)
           envsubst writeText writeShellScriptBin writeShellScript unzip
-          opam-installer cacert jq opam2json removeReferencesTo;
+          opam-installer utop ssl tsl cacert jq opam2json removeReferencesTo;
 
         pkgdef' = fa.passthru.pkgdef;
 
