@@ -155,7 +155,7 @@
             src = ./scripts/opam-nix-regen.in;
             dir = "bin";
             isExecutable = true;
-            inherit (pkgs) runtimeShell jq;
+            inherit (pkgs) runtimeShell jq cacert;
             opamNixGen =
               "${self.packages.${system}.opam-nix-gen}/bin/opam-nix-gen";
           };
